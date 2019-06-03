@@ -1,0 +1,45 @@
+/*No es un plantilla, son css realizados por mi, solo que en proyecto no comente*/
+/*cuerpo de la pagina, colores de fondo, letra de google fonts, y tamaño*/
+body{
+    background: rgb(255, 255, 255);
+    font-family: 'Raleway';
+    font-size: 14px;
+    /*Margen y alineacion de texto 1,  texto principal. Titulo*/
+}h1{
+    margin:5px;
+    text-align: center;
+    font-weight: 100;
+    color: #575757;
+
+}
+/*Margen y alineacion de texto 2,  titulo nivel 2, tipo de letra*/
+h2{
+    font-family: sans-serif;
+    margin: 5px;
+    text-align: center;
+}
+/*Margen y alineacion de texto 4,   titulo nivel 4, tipo de letra*/
+h4{
+    font-family: sans-serif;
+    margin:5px;
+    text-align: center;
+}
+/*Margen y alineacion de parrafos, tipo de letra*/
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:5px;
+    text-align: justify;
+    font-weight: 100;
+    text-underline-position: below;
+}
+/*Orentacion de la imagen*/
+.img{
+    image-orientation: 0deg;
+     
+}
+/*Margen y alineacion de texto 3,   titulo nivel 3, tipo de letra*/
+h3{
+    margin:8px;
+    text-align: center;
+    color: black;
+}

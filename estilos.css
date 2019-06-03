@@ -1,0 +1,170 @@
+
+/* estilos*/
+/*letra y bordes*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+/*Lo maximo que debe mostrarse ocntenedros*/
+.container-gallery{
+    max-width: 1000px;
+    width: 100%;
+    background: rgb(155, 228, 228);
+    padding: 20px;
+    margin:auto;
+    margin-top: 30px;
+    border-radius: 14px;
+    box-shadow: 0px 0px 40px -5px;
+}
+/* color para que cambie al pasar el mouse*/
+.btn-recient:hover{
+    background: #d314d3;
+
+}
+/*justificar el contenido*/
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* limite de espacio, baje una debajo de la otra*/
+    margin-top: 40px;
+}
+/*ancho y alto de la figura*/
+figure{
+    width: 300px;
+    height: 160px;
+    position: relative;
+    overflow: hidden;/* recortar la imagen*/
+    margin: 10px;
+}
+/*Opacidad de imagen de texto*/
+figure:hover h1{
+    opacity: 1;
+
+}
+
+/*ancho de la imagen*/
+figure img{
+    width: 100%;
+} /*Texto encima de las imagenes*/
+figure h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    background:rgba(0,0,0,0,8);
+    padding: 100px;
+    opacity: 0;
+    transition: all 600ms cubic-bezier(1,0,0,1);
+    cursor: default;
+}/* ciculo de mas, para subir la imgne*/
+.fa-plus{
+    width: 60px;
+    height: 60px;
+    position: fixed;/*posicion, encima de todo*/
+    z-index: 1;
+    right: 40px;/*se mueva a la derecha */
+    bottom: 40px; /*que baje el botton un poco*/
+    background: white;/* el fondo*/
+    border-radius: 50%;
+    font-size: 40px;
+    padding: 10px;
+    color: #575757;
+    box-shadow: 0px 0px 40px -5px;/*sombra*/
+    text-align: center;
+    transition: all 600ms cubic-bezier(1,0,0,1);
+    cursor: pointer;
+}
+/*cuando se pase el mouse , se mueva, rotacion*/
+.fa-plus:hover{
+    transform: rotate(90deg);
+}
+/*estilizando formulario para subir iamgen*/
+form{
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    position: fixed;
+    top: -400px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 3;
+    box-shadow: 0px 0px 40px -5px;
+}
+/*letr de seleccionar imagen*/
+form h3{
+    text-align: center;
+    color: #575757;
+}
+/*del formularioseleccionar imagen*/
+.title-image{
+    width: 100%;
+    padding: 6px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+/*seleccionar imagen el la galeria dde pc*/
+.image-select{
+    width: 100%;
+    height: 150px;
+    margin-top: 40px;
+}
+/*estilos para cargar imagen*/
+.load-image{
+    padding: 14px 40px;
+    background: #ff5800;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 500ms cubic-bezier(1,0,0,1);
+}
+/*boton de subir imagen*/
+.upload{
+    padding: 14px 40px;
+    background: #0089ff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 500ms cubic-bezier(1,0,0,1);
+}
+/**/
+.load-image:hover,
+/*transicion y fonofo*/
+.upload:hover{
+    background: #575757;
+}
+
+.seleted{
+    display: none;
+}
+/* imagen opaca negra*/
+.shape{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/*cubra el espacio de la pantalla al movela o reducir el tamaño de lapagina*/
+@media screen and (max-width: 700px){
+    
+    .container-gallery{
+        margin-top: 0px;
+    }
+}
+
+
